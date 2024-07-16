@@ -1,0 +1,62 @@
+/* 04.---------------thư viện mansory  */
+
+.box-mansory {
+    padding-top: 68px;
+    width: calc(100vmax);
+    margin: auto;
+}
+
+
+/* layout mansory */
+
+.content_mansory {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.box_image {
+    width: calc(25%);
+    box-sizing: border-box;
+    margin-bottom: -15px;
+    padding: 5px;
+}
+
+
+/* album ảnh */
+
+.box_image img {
+    width: 100%;
+}
+
+.box_image>a {
+    margin-top: 15px !important;
+    display: inline-block;
+}
+
+@media (min-width:320px) and (max-width:543px) {
+    .content_mansory .box_image {
+        width: 100% !important;
+    }
+}
+
+@media (min-width:544px) and (max-width:767px) {
+    .content_mansory .box_image {
+        width: 50% !important;
+    }
+    .box-mansory {
+        width: calc(100vmax - 30px);
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .content_mansory .box_image {
+        width: 33.33% !important;
+    }
+    .box-mansory {
+        width: calc(100vmax - 80px);
+    }
+}
+
+
+/* End new css */

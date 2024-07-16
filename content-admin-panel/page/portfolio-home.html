@@ -1,0 +1,116 @@
+<div class="father-box-index overlay-class-1 overlay-class-2" style="min-height: 100vh;">
+    <div ng-show="home_index" class="img-background father-box-index-row-one " style="height:100vh;background-image: url(source-data/home-3.jpg);">
+
+        <!-- include menu -->
+        <div class="container-fluid child-box" ng-include="'content-admin-panel/general-ingredients/view-menu/menu-home.html'"></div>
+        <!-- content-index -->
+        <div class="middle text-center child-box">
+            <h1 class="uppercase text-color-30 child-item">
+                portfolio
+            </h1>
+            <span class="child-item">Im</span>
+            <span class="child-item">Designer</span>
+
+        </div>
+        <div class="bottom-right child-box text-center padding-tb-5 flex-layout-column">
+            <a target="_blank" ng-href="https://www.facebook.com/HQcssmultimedia/"><i class="fa-brands fa-facebook child-item"></i></a>
+            <i class="fa-brands fa-pinterest child-item" style="color:#7a5c5c;"></i>
+            <i class="fa-brands fa-instagram child-item " style="color:#7a5c5c;"></i>
+            <i class="fa-brands fa-twitter child-item" style="color:#7a5c5c;"></i>
+
+        </div>
+        <div class="bottom-left child-box text-center padding-tb-5 flex-layout-column">
+            <p class="child-item ">VN</p>
+            <!-- <p class="child-item">EN</p> -->
+
+        </div>
+
+
+
+    </div>
+    <!-- 01.about -->
+    <div ng-show="about" class="container-fluid row-lg row-sm row-md row-xl row-xxl padding-b-30" ng-include="'content-admin-panel/page-components/home-index/about.html'" style=" min-height: 100vh; background-color: #101010;"></div>
+    <!-- 02.resume -->
+    <div ng-show="resume" class="container-fluid row-lg row-sm row-md row-xl row-xxl padding-b-30" ng-include="'content-admin-panel/page-components/home-index/resume.html'" style="min-height: 100vh; background-color: #101010;"></div>
+    <!-- 03.portfolio -->
+    <div ng-show="portfolio" class="container-fluid row-lg row-sm row-md row-xl row-xxl padding-b-30" ng-include="'content-admin-panel/page-components/home-index/portfolio.html'" style="min-height: 100vh; background-color: #101010;"></div>
+    <!-- 04.blog -->
+    <div ng-show="blog" class="container-fluid row-lg row-sm row-md row-xl row-xxl padding-b-30" ng-include="'content-admin-panel/page-components/home-index/blog.html'" style="min-height: 100vh; background-color: #101010;"></div>
+    <!-- 05.contact -->
+    <div ng-show="contact" class="container-fluid row-lg row-sm row-md row-xl row-xxl padding-b-30" ng-include="'content-admin-panel/page-components/home-index/contact.html'" style="min-height: 100vh; background-color: #101010;"></div>
+
+    <!--03.1 Portfolio theo chuyên ngành -->
+    <!-- A.Chỉnh sửa ảnh-->
+    <!-- đã include thẳng bên dưới -->
+
+    <!-- B.Poster-->
+    <div ng-show="type_poster" class=" padding-b-30" ng-include="'content-admin-panel/page-components/portfolio-include-list-by-type/portfolio-poster.html'" style="min-height: 100vh; background-color: #101010;"></div>
+    <!-- C.Web -->
+    <div ng-show="type_web" class="container-fluid row-lg row-sm row-md row-xl row-xxl padding-b-30" ng-include="'content-admin-panel/page-components/portfolio-include-list-by-type/portfolio-web.html'" style="min-height: 100vh; background-color: #101010;"></div>
+    <!-- D. Video -->
+    <div ng-show="type_video" class=" container-fluid row-lg row-sm row-md row-xl row-xxl padding-b-30" ng-include="'content-admin-panel/page-components/portfolio-include-list-by-type/portfolio-video.html'" style="min-height: 100vh; background-color: #101010;"></div>
+    <!-- E.Tạp chí -->
+    <div ng-show="type_tapchi" class="container-fluid row-lg row-sm row-md row-xl row-xxl padding-b-30" ng-include="'content-admin-panel/page-components/portfolio-include-list-by-type/portfolio-tapchi.html'" style="min-height: 100vh; background-color: #101010;"></div>
+
+
+
+    <!-- <div class="box-image visibility-hidden">
+        <div ng-click="" class="close-tabs" style="width: 100vmax;top: 15px;
+        right: 35px;display: flex;
+    justify-content: flex-end;">
+            <i style="font-size: 35px;" class=" cursor close-portfolio-list fa-light fa-xmark"></i>
+        </div>
+        <div class="text-center box-title-top" style="width: 100vmax;">
+            <h6 class="child-item">Showcasing some of my best work </h6>
+            <h2 class="child-item text-color-60-contrast">Photo projects</h2>
+
+
+        </div>
+        <div class="item-image">
+
+            <img src="source-data/img/01.jpg" alt="">
+            <img src="source-data/img/02.jpg" alt="">
+
+        </div>
+        <div class="item-image">
+
+            <img src="source-data/img/01.jpg" alt="">
+            <img src="source-data/img/02.jpg" alt="">
+
+        </div>
+        <div class="item-image">
+
+            <img src="source-data/img/01.jpg" alt="">
+            <img src="source-data/img/02.jpg" alt="">
+
+        </div>
+        <div class="item-image">
+
+            <img src="source-data/img/01.jpg" alt="">
+            <img src="source-data/img/02.jpg" alt="">
+
+        </div>
+        <div class="item-image">
+
+            <img src="source-data/img/01.jpg" alt="">
+            <img src="source-data/img/02.jpg" alt="">
+
+        </div>
+        <div class="item-image">
+
+            <img src="source-data/img/01.jpg" alt="">
+            <img src="source-data/img/02.jpg" alt="">
+
+        </div>
+
+
+    </div> -->
+</div>
+
+<script>
+    $(function() {
+        $(".item-image,.item-image-2").twentytwenty({
+            default_offset_pct: 0.5
+        });
+    })
+</script>

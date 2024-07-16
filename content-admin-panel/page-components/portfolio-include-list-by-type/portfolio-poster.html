@@ -1,0 +1,139 @@
+<style>
+    .box-mansory {
+        padding-top: var(--height--menu);
+        width: calc(100vmax - 136px);
+        margin: auto;
+    }
+    /* layout mansory */
+    
+    .content_mansory {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    
+    .box_image {
+        width: calc(25%);
+        box-sizing: border-box;
+        margin-bottom: -15px;
+        padding: 5px;
+    }
+    /* album ảnh */
+    
+    .box_image img {
+        width: 100%;
+    }
+    
+    .box_image>a {
+        margin-top: 15px !important;
+        display: inline-block;
+    }
+    
+    @media (min-width:320px) and (max-width:543px) {
+        .content_mansory .box_image {
+            width: 100% !important;
+        }
+    }
+    
+    @media (min-width:544px) and (max-width:767px) {
+        .content_mansory .box_image {
+            width: 50% !important;
+        }
+        .box-mansory {
+            width: calc(100vmax - 30px);
+        }
+    }
+    
+    @media (min-width:768px) and (max-width:991px) {
+        .content_mansory .box_image {
+            width: 33.33% !important;
+        }
+        .box-mansory {
+            width: calc(100vmax - 80px);
+        }
+    }
+</style>
+<div ng-click="clear_poster_list()" class="close-tabs">
+    <i style="font-size: 35px;" class=" cursor close-portfolio-list fa-light fa-xmark"></i>
+</div>
+
+<!-- 01 -->
+<div class="text-center box-title-top">
+    <h6 class="child-item">Showcasing some of my best work </h6>
+    <h2 class="child-item text-color-60-contrast">Posters projects</h2>
+
+
+</div>
+
+<div class="box-mansory margin-t-30">
+    <!-- Filter -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 right-end reset-col">
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button weight-500">Hiển thị theo lựa chọn</button>
+                    <div class="w3-dropdown-content menu_filter w3-bar-block w3-border">
+                        <a data-danhmucanh=".người" href="#" class="w3-bar-item w3-button">Người</a>
+                        <a data-danhmucanh=".phong_cảnh" href="#" class="w3-bar-item w3-button">Phong cảnh</a>
+                        <a data-danhmucanh="all" href="#" class="w3-bar-item w3-button">Tất cả</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End filter -->
+    <div class="content_mansory ">
+        <div class=" FancyBox_preview box_image ">
+            <a class="fancybox-buttons " data-fancybox-group="button" href="source-data/poster/slide1.jpg"><img src="source-data/poster/slide1.jpg" alt="" /></a>
+
+
+        </div>
+
+        <div class=" FancyBox_preview box_image">
+            <a class="fancybox-buttons" data-fancybox-group="button" href="source-data/poster/slide2.jpg"><img src="source-data/poster/slide2.jpg" alt="" /></a>
+
+        </div>
+        <div class=" FancyBox_preview box_image">
+            <a class="fancybox-buttons" data-fancybox-group="button" href="source-data/poster/slide3.jpg"><img src="source-data/poster/slide3.jpg" alt="" /></a>
+        </div>
+        <div class=" FancyBox_preview box_image">
+            <a class="fancybox-buttons" data-fancybox-group="button" href="source-data/poster/slide4.jpg"><img src="source-data/poster/slide4.jpg" alt="" /></a>
+        </div>
+        <div class=" FancyBox_preview box_image">
+            <a class="fancybox-buttons" data-fancybox-group="button" href="source-data/poster/slide5.jpg"><img src="source-data/poster/slide5.jpg" alt="" /></a>
+        </div>
+        <div class=" FancyBox_preview box_image">
+            <a class="fancybox-buttons" data-fancybox-group="button" href="source-data/poster/slide6.jpg"><img src="source-data/poster/slide6.jpg" alt="" /></a>
+        </div>
+        <div class=" FancyBox_preview box_image">
+            <a class="fancybox-buttons" data-fancybox-group="button" href="source-data/poster/slide7.jpg"><img src="source-data/poster/slide7.jpg" alt="" /></a>
+        </div>
+        <div class=" FancyBox_preview box_image">
+            <a class="fancybox-buttons" data-fancybox-group="button" href="source-data/poster/slide8.jpg"><img src="source-data/poster/slide8.jpg" alt="" /></a>
+        </div>
+        <div class=" FancyBox_preview box_image">
+            <a class="fancybox-buttons" data-fancybox-group="button" href="source-data/poster/slide9.jpg"><img src="source-data/poster/slide9.jpg" alt="" /></a>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+<script>
+    $('.content_mansory').on('load', function() {
+        $('.content_mansory').isotope({
+            itemSelector: '.box_image'
+        });
+    });
+
+
+
+
+    $('.FancyBox_preview a').fancybox();
+</script>

@@ -1,0 +1,53 @@
+/* layout mansory */
+
+.content_mansory {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: calc(100% - 132px);
+    margin: auto;
+    padding-top: 45px;
+}
+
+.box_image {
+    width: calc(33.33%);
+    box-sizing: border-box;
+    margin-bottom: -15px;
+    padding: 0px 10px 35px 10px !important;
+}
+
+
+/* album ảnh */
+
+.box_image img {
+    width: 100%;
+}
+
+.box_image>a {
+    margin-top: 15px !important;
+    display: inline-block;
+}
+
+@media (min-width:320px) and (max-width:543px) {
+    .content_mansory .box_image {
+        width: 100% !important;
+    }
+    .content_mansory {
+        width: calc(100% - 56px) !important;
+    }
+}
+
+@media (min-width:544px) and (max-width:767px) {
+    .content_mansory .box_image {
+        width: 50% !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .content_mansory .box_image {
+        width: 33.33% !important;
+    }
+}
+
+
+/* End new css */

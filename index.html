@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="/HQMultimediaPortfolio/"> -->
+    <title>Web Blog Project</title>
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- fontawesome 6.0 -->
+    <link rel="stylesheet" href="library/fontawesome/css/all.min.css">
+
+
+
+    <!-- A.HQ-css-plugin -->
+    <link rel="stylesheet" href="library/hq-multimedia-plugin/hq-css/hqcss-ver-1.9.css">
+
+    <!-- B.Vendor-Library -->
+    <!-- B1.W3-Css -->
+    <link rel="stylesheet" href="library/w3css/w3.css">
+
+
+    <!--B2.Bootstrap 5 W3School -->
+    <link rel="stylesheet" href="library/bootstrap-w3schools.com/css/bootstrap-5.min.css">
+
+    <script src="library/bootstrap-w3schools.com/js/jquery.min.js"></script>
+
+
+    <script src="library/bootstrap-w3schools.com/js/popper.min.js"></script>
+
+    <script src="library/bootstrap-w3schools.com/js/bootstrap.min.js"></script>
+
+
+    <!-- OWL Slider -->
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- isotop(mansory) -->
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="vendor/fancybox_3/lib/jquery.mousewheel.pack.js"></script>
+    <script type="text/javascript" src="vendor/fancybox_3/source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/fancybox_3/source/jquery.fancybox.css" media="screen" />
+
+
+    <!-- video -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
+    <link rel="stylesheet" href="vendor/video-mediaelement-plugins-2.6.7/dist/playlist/playlist.css">
+    <link rel="stylesheet" href="vendor/video-mediaelement-plugins-2.6.7/dist/playlist/playlist-edit-by-user.css">
+    <link rel="stylesheet" href="vendor/video-mediaelement-plugins-2.6.7/dist/playlist/normalize.min.css">
+    <!--end video -->
+
+
+
+
+    <!-- B3.AngularJS -->
+    <script src="library/angular-file-upload-master/js/angular1.5.5.min.js"></script>
+    <script src="library/angular-file-upload-master/js/angular-animate.min.js"></script>
+    <script src="library/angular-file-upload-master/js/angular-aria.min.js"></script>
+    <script src="library/angular-file-upload-master/js/angular-messages.min.js"></script>
+    <script src="library/angular-file-upload-master/js/angular-material.min.js"></script>
+    <script src="library/angular-file-upload-master/js/angular-route-1.5.5.js"></script>
+    <script src="library/angular-file-upload-master/js/dirPagination.js"></script>
+    <script src="library/angular-file-upload-master/js/angular-cookies.js"></script>
+    <script src="library/angular-file-upload-master/js/angular-sanitize.js"></script>
+
+    <!--   <link rel="stylesheet" href="../../Angular2026/angular-file-upload-master/css/angular-material.min.css"> -->
+    <!-- Angular HQMultimedia template -->
+
+    <!-- Function AngularJS Template -->
+    <script src="js-angularJs/general-ingredients/setup.js "></script>
+    <script src="js-angularJs/general-ingredients/AngularRoute.js "></script>
+    <script src="library/angular-file-upload-master/js/ng-directive/ng-directive.js "></script>
+
+    <script src="library/angular-file-upload-master/js/hq-toast/HQ-Toast-Messenger.js "></script>
+
+
+    <!-- End function AngularJS Template -->
+    <!-- Page angularjs -->
+    <script src="js-angularJs/page/home-index.js"></script>
+    <!--  -->
+    <!-- End page angularjs -->
+
+
+
+
+
+    <!-- B4.Tags input -->
+    <!-- tags input -->
+    <link rel="stylesheet" href="vendor/tags-bootstrap-input/css/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="vendor/tags-bootstrap-input/css/tags-bootstrap.css">
+    <!-- tags input -->
+    <script src="vendor/tags-bootstrap-input/js/bootstrap-tagsinput.min.js"></script>
+
+
+    <!-- Thư viện animate -->
+    <link rel="stylesheet" href="vendor/animate/animate.min.css">
+    <!-- bootstrap 5 -->
+
+    <style>
+        .load__img {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99999;
+            background-color: #191919;
+        }
+    </style>
+    <style>
+        .owl-carousel {
+            overflow: hidden;
+        }
+        
+        .owl-nav {
+            margin: 0 !important;
+        }
+        
+        .owl-dots {
+            display: none !important;
+        }
+        
+        .owl-nav {
+            position: absolute;
+            /* background-color: antiquewhite; */
+            top: 50%;
+            transform: translateY(calc(-50% - 50px)) translateX(-50%);
+            left: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        button.owl-next,
+        button.owl-prev {
+            width: 39px !important;
+            height: 39px !important;
+            border-radius: 50% !important;
+            background-color: #f1f1f173 !important;
+            color: #00000094 !important;
+            font-size: 20px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            padding-bottom: 7px !important;
+            transition: 0.5s !important;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+        
+        button.owl-next:hover,
+        button.owl-prev:hover {
+            background-color: #797979 !important;
+            transition: 0.5s !important;
+        }
+        
+        @media (min-width:320px) and (max-width:1065px) {
+            button.owl-next {
+                margin-right: 15px !important;
+            }
+            button.owl-prev {
+                margin-left: 42px !important;
+            }
+        }
+        
+        button.owl-next {
+            margin-right: 15px !important;
+        }
+    </style>
+
+</head>
+
+
+<body style="font-size: 15px !important;" ng-app="myApp" class="theme-2 interface-basic font-basic ">
+
+
+
+    <div class="load">
+        <div class="load__img flex-align-middle">
+            <img src="source-data/loading.gif" width="100px" alt="">
+        </div>
+    </div>
+
+
+    <!-- <div ng-view></div> -->
+    <!-- Menu -->
+    <div class="box-menu">
+        <div class="logo">
+            <a href="">
+                <img src="source-data/logo/logo_light.png" alt="  ">
+            </a>
+        </div>
+        <div class="menu-small-icon"><i class="fa-light fa-bars"></i></div>
+
+        <div class="box-link ">
+            <ul class="ul-sidebar">
+                <li class="sidebar-link">
+                    <div class="box_scroll">
+                        <div class="scroll_title ">
+                            <a href="https://hqmultimedia.github.io/cv/">
+                                <!-- <i class="fa-light fa-sliders-up padding-r-5"></i> -->
+                                <span class="title-link">CV</span>
+                            </a>
+                            <!-- icon-right -->
+                            <!-- <div class="icon-dropdown">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </li>
+                <li class="sidebar-link">
+                    <div class="box_scroll">
+                        <div class="scroll_title ">
+                            <a href="">
+                                <!-- <i class="fa-light fa-sliders-up padding-r-5"></i> -->
+                                <span class="title-link selected">Layout Center</span>
+                            </a>
+                            <!-- icon-right -->
+                            <!-- <div class="icon-dropdown">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </li>
+                <li class="sidebar-link">
+                    <div class="box_scroll">
+                        <div class="scroll_title ">
+                            <a href="layout-mansory.html">
+                                <!-- <i class="fa-light fa-sliders-up padding-r-5"></i> -->
+                                <span class="title-link">Layout Mansory 2</span>
+                            </a>
+                            <!-- icon-right -->
+                            <!-- <div class="icon-dropdown">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </li>
+                <li class="sidebar-link">
+                    <div class="box_scroll">
+                        <div class="scroll_title ">
+                            <a href="">
+                                <!-- <i class="fa-light fa-sliders-up padding-r-5"></i> -->
+                                <span class="title-link">Portfolio Full</span>
+                            </a>
+                            <!-- icon-right -->
+                            <div class="icon-dropdown">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                        </div>
+                        <div class="scroll_content drop-center ">
+
+                            <!-- item 1 -->
+                            <div class="items-drop">
+                                <a href="" class="link-scroll"><i class="fa-solid fa-circle icon-link-dropdown"></i>Thiết kế Web (FullStack)</a>
+                                <div class="owl-carousel owl-theme  ">
+                                    <!-- slide item-1 -->
+                                    <div class="product-highlight">
+                                        <a href="">
+                                            <img class="round-large img-product-highlight" src="source-data/portfolio/poster/2.jpg" alt="">
+
+
+                                            <h6 class="margin-t-15">Color package no.1379</h6>
+
+                                        </a>
+                                        <p>$10.00</p>
+                                        <button class="btn btn-primary margin-t-5">Buy Package</button>
+                                    </div>
+                                    <!-- slide item-1 -->
+                                    <div class="product-highlight">
+                                        <a href="">
+                                            <img class="round-large img-product-highlight" src="source-data/portfolio/poster/3.jpg" alt="">
+
+
+                                            <h6 class="margin-t-15">Color package no.1379</h6>
+
+                                        </a>
+                                        <p>$10.00</p>
+                                        <button class="btn btn-primary margin-t-5">Buy Package</button>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="items-drop">
+                                <a href="" class="link-scroll"><i class="fa-solid fa-circle icon-link-dropdown"></i>Thiết kế Poster</a>
+                                <div class="owl-carousel owl-theme  ">
+                                    <!-- slide item-1 -->
+                                    <div class="product-highlight">
+                                        <a href="">
+                                            <img class="round-large img-product-highlight" src="source-data/portfolio/poster/1.jpg" alt="">
+
+
+                                            <h6 class="margin-t-15">Color package no.1379</h6>
+
+                                        </a>
+                                        <p>$10.00</p>
+                                        <button class="btn btn-primary margin-t-5">Buy Package</button>
+                                    </div>
+                                    <!-- slide item-1 -->
+                                    <div class="product-highlight">
+                                        <a href="">
+                                            <img class="round-large img-product-highlight" src="source-data/posts/blog-centered-image-5.jpg" alt="">
+
+
+                                            <h6 class="margin-t-15">Color package no.1379</h6>
+
+                                        </a>
+                                        <p>$10.00</p>
+                                        <button class="btn btn-primary margin-t-5">Buy Package</button>
+                                    </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <!-- item 3 -->
+                            <div class="items-drop">
+                                <a href="" class="link-scroll"><i class="fa-solid fa-circle icon-link-dropdown"></i>Chỉnh sửa ảnh</a>
+                                <div class="product-highlight">
+                                    <a href="">
+                                        <img class="round-large img-product-highlight" src="https://kloe.qodeinteractive.com/wp-content/uploads/2015/12/Basic-Basil-Bae.jpg" alt="">
+
+
+                                        <h6 class="margin-t-15">Color package no.1379</h6>
+
+                                    </a>
+                                    <p>$10.00</p>
+                                    <button class="btn btn-primary margin-t-5">Buy Package</button>
+                                </div>
+                            </div>
+                            <!-- item 04 -->
+                            <div class="items-drop">
+                                <a href="" class="link-scroll"><i class="fa-solid fa-circle icon-link-dropdown"></i>Dựng Phim</a>
+                                <div class="product-highlight">
+                                    <a href="">
+                                        <img class="round-large img-product-highlight" src="https://kloe.qodeinteractive.com/wp-content/uploads/2015/12/Basic-Basil-Bae.jpg" alt="">
+
+
+                                        <h6 class="margin-t-15">Color package no.1379</h6>
+
+                                    </a>
+                                    <p>$10.00</p>
+                                    <button class="btn btn-primary margin-t-5">Buy Package</button>
+                                </div>
+                            </div>
+                            <!-- item 05 -->
+                            <div class="items-drop">
+                                <a href="" class="link-scroll"><i class="fa-solid fa-circle icon-link-dropdown"></i>Thiết kế tạp chí</a>
+                                <div class="product-highlight">
+                                    <a href="">
+                                        <img class="round-large img-product-highlight" src="https://kloe.qodeinteractive.com/wp-content/uploads/2015/12/Basic-Basil-Bae.jpg" alt="">
+
+
+                                        <h6 class="margin-t-15">Color package no.1379</h6>
+
+                                    </a>
+                                    <p>$10.00</p>
+                                    <button class="btn btn-primary margin-t-5">Buy Package</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </li>
+                <li class="sidebar-link">
+                    <div class="box_scroll">
+                        <div class="scroll_title ">
+                            <a href="#">
+                                <!-- <i class="fa-light fa-sliders-up padding-r-5"></i> -->
+                                <span class="title-link">Portfolio Basic</span>
+                            </a>
+                            <!-- icon-right -->
+                            <div class="icon-dropdown">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+                        </div>
+                        <div class="scroll_content">
+                            <!-- link cấp 2 -->
+                            <div class="items-drop icon-items-drop">
+                                <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                <a href="#" class="link-scroll">Thiết kế Web (Full-Stack)</a>
+                                <!-- menu cấp 3 -->
+                                <div class="scroll_content_2">
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll"> Web Blog 01 (Giao diện)</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll"> Web Fashion 01 (Giao diện)</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll"> Web tin tức 01 (Giao diện)</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll"> Web App Admin 01 (Giao diện)</a>
+
+                                    </div>
+
+                                </div>
+                                <!-- end menu cấp 3 -->
+                            </div>
+
+                            <!-- link cấp 2 -->
+                            <div class="items-drop icon-items-drop">
+                                <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                <a href="" class="link-scroll"> Tạp chí</a>
+                                <!-- link cấp 3 -->
+                                <div class="scroll_content_2">
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll"> Project Fashion 01</a>
+
+                                    </div>
+
+
+                                </div>
+                                <!-- End link cấp 3 -->
+
+                            </div>
+                            <!-- link cấp 2 -->
+                            <div class="items-drop icon-items-drop">
+                                <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                <a href="" class="link-scroll"> Chỉnh sửa ảnh</a>
+                                <!-- link cấp 3 -->
+                                <div class="scroll_content_2">
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll"> Lightroom</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Photoshop</a>
+
+                                    </div>
+
+
+                                </div>
+                                <!-- End link cấp 3 -->
+
+                            </div>
+                            <!-- link cấp 2 -->
+                            <div class="items-drop icon-items-drop">
+                                <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                <a href="" class="link-scroll"> Dựng phim</a>
+                                <!-- link cấp 3 -->
+                                <div class="scroll_content_2">
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Mảng Social media</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Mảng quảng cáo SP </a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Cắt dựng</a>
+
+                                    </div>
+
+
+
+                                </div>
+                                <!-- End link cấp 3 -->
+
+                            </div>
+                            <!-- link cấp 2 -->
+                            <div class="items-drop icon-items-drop">
+                                <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                <a href="" class="link-scroll"> Thiết kế poster</a>
+                                <!-- link cấp 3 -->
+                                <div class="scroll_content_2">
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Poster đồ ăn</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Poster Spa</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Poster mỹ phẫm</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Poster BĐS</a>
+
+                                    </div>
+                                    <!-- item link cấp 3 -->
+                                    <div class="items-drop icon-items-drop">
+                                        <i class="fa-solid fa-circle icon-link-dropdown"></i>
+                                        <a href="" class="link-scroll">Poster SP khác</a>
+
+                                    </div>
+
+
+
+                                </div>
+                                <!-- End link cấp 3 -->
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </div>
+        <div class="box-icon">
+            <div class="item-icon">
+                <i class="fa-sharp fa-light fa-magnifying-glass"></i>
+            </div>
+            <div class="item-icon flex">
+                <!-- <i class="fa-regular fa-cart-shopping"></i> -->
+                <i class="fa-solid fa-heart" style="color: brown;"></i>
+                <span class="padding-l-5" style="font-size: 15px;">(10)</span>
+                <!-- <span class="item-cart">9+</span> -->
+            </div>
+            <div class="item-icon">
+                <i class="fa-light fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <!-- End menu -->
+    <!-- Slide -->
+    <div class="container-fluid" style="padding-top: 68px;">
+
+        <div class="row ">
+            <div class="col-12 reset-col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-interval="900000" data-ride="carousel">
+                    <ol class="carousel-indicators indicator-round ">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                            <!-- ảnh thumbnail -->
+                            <img src="source-data/slide/Slider1.jpg" class="indicator-thumbnail" alt="">
+                            <!-- End ảnh thumbnail -->
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                            <!-- ảnh thumbnail -->
+                            <img src="source-data/slide/Slider2.jpg" class="indicator-thumbnail" alt="">
+                            <!-- End ảnh thumbnail -->
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                            <!-- ảnh thumbnail -->
+                            <img src="source-data/slide/Slider3.jpg" class="indicator-thumbnail" alt="">
+                            <!-- End ảnh thumbnail -->
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- items carousel -->
+                        <div class="carousel-item off-overlay img-slide animated bounceInRight img-background" style="background-image: url(source-data/slide/Slider1.jpg) ;">
+                            <!-- content-text-carousel -->
+                            <div class="box-content-carousel">
+
+                                <div class="item-carousel">
+                                    <p>Parallax Presentation </p>
+                                </div>
+                                <div class="item-carousel">
+                                    <p>HELLO! IT’S AWESOME PARALLAX. </p>
+                                </div>
+                                <div class="item-carousel">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                        lobortis </p>
+                                </div>
+                                <div class="box-button">
+                                    <div class="item-button">
+                                        <p>LEARN MORE</p>
+                                    </div>
+                                    <!-- <div class="item-button">
+                                        <p>LEARN MORE</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- end content-text -->
+
+                        </div>
+                        <!-- end items carousel -->
+                        <!-- items carousel -->
+                        <div class="carousel-item off-overlay img-slide animated bounceInRight img-background" style="background-image: url(source-data/slide/Slider2.jpg) ;">
+                            <!-- content-text-carousel -->
+                            <div class="box-content-carousel">
+
+                                <div class="item-carousel">
+                                    <p>Parallax Presentation </p>
+                                </div>
+                                <div class="item-carousel">
+                                    <p>HELLO! IT’S AWESOME PARALLAX. </p>
+                                </div>
+                                <div class="item-carousel">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                        lobortis </p>
+                                </div>
+                                <div class="box-button">
+                                    <div class="item-button">
+                                        <p>LEARN MORE</p>
+                                    </div>
+                                    <!-- <div class="item-button">
+                                        <p>LEARN MORE</p>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <!-- end content-text -->
+
+                        </div>
+                        <!-- end items carousel -->
+                        <!-- items carousel -->
+                        <div class="carousel-item off-overlay img-slide animated bounceInRight img-background" style="background-image: url(source-data/slide/Slider3.jpg) ;">
+                            <!-- content-text-carousel -->
+                            <div class="box-content-carousel">
+
+                                <div class="item-carousel">
+                                    <p>Parallax Presentation </p>
+                                </div>
+                                <div class="item-carousel">
+                                    <p>HELLO! IT’S AWESOME PARALLAX. </p>
+                                </div>
+                                <div class="item-carousel">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                        lobortis </p>
+                                </div>
+                                <div class="box-button">
+                                    <div class="item-button">
+                                        <p>LEARN MORE</p>
+                                    </div>
+                                    <!-- <div class="item-button">
+                                        <p>LEARN MORE</p>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <!-- end content-text -->
+
+                        </div>
+                        <!-- end items carousel -->
+
+
+                    </div>
+                    <a class="carousel-control-prev setting-prev-bootstrap" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="flex-align-middle setting-icon-prev-bootstrap " aria-hidden="true">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next setting-next-bootstrap" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="flex-align-middle setting-icon-next-bootstrap" aria-hidden="true">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End slide -->
+
+
+
+    <!-- Content -->
+    <div class="box-posts-content">
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 1 -->
+        <div class="one-posts">
+            <div class="title-top">
+                <p class="item-title">December 28, 2015 </p>
+                <a class="item-title" href="">
+                    <h5>PATTERNS ON THE STREETS OF LONDON</h5>
+                </a>
+                <a class="item-title" href="">
+                    <p>MAKEUP & COSMETICS</p>
+                </a>
+            </div>
+            <!-- image -->
+            <div class="box-image-posts">
+                <a href="">
+                    <img class="img-posts" src="source-data/posts/blog-centered-image-1.jpg" alt="">
+                </a>
+            </div>
+
+            <p class="text-center margin-tb-30" style="color: #797979;">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                ea commodo consequat. Duis autem vel eum...
+            </p>
+
+            <!-- box-bottom -->
+            <div class="box-bottom">
+                <!-- icon -->
+                <div class="box-icon-posts">
+
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                    <div class="item-icon-posts">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <!-- <div class="item-icon-posts" style="color:brown;">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> -->
+                </div>
+                <!-- button reading -->
+                <a class="button-reading" href="Google.com">
+
+                    <p>CONTINUE READING</p>
+
+
+                </a>
+                <!-- box-comment -->
+                <div class="box-comment">
+                    <p>3 COMMENTS</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- End content -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top" style="margin-top: 50px;">
+            <div class="block-item-footer">
+                <div class="title-footer">
+                    <a href=""><img src="source-data/logo/logo_light.png" height="100%" alt=""></a>
+                </div>
+                <div>
+                    <p style="color: #b8b8b8;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugiat autem, neque commodi aspernatur perferendis pariatur vitae tempora eaque ut dolores aliquid repudiandae ullam magnam, eligendi, consequatur nisi quisquam illo?</p>
+                    <div class="box-icon-footer">
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="block-item-footer">
+                <div class="title-footer">
+                    <H6>FAQ</H6>
+                </div>
+
+                <div>
+                    <div class="line-item">
+                        <i class="fa-solid fa-globe"></i>
+                        <p> Lorem ipsum dolor sit amet?</p>
+                    </div>
+                    <div class="line-item">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        <p> Lorem ipsum dolor sit amet?</p>
+                    </div>
+                    <div class="line-item">
+                        <i class="fa-sharp fa-regular fa-map-location"></i>
+                        <p> Lorem ipsum dolor sit amet?</p>
+                    </div>
+                    <div class="line-item">
+                        <i class="fa-regular fa-heart "></i>
+                        <p> Lorem ipsum dolor sit amet?</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="block-item-footer">
+                <div class="title-footer">
+                    <H6>TWITTER FEED</H6>
+                </div>
+
+                <p>For all the latest news and updates, follow us on Twitter: @QodeInteractive.com </p>
+            </div>
+            <div class="block-item-footer">
+                <div class="title-footer">
+                    <H6>INSTAGRAM FEED</H6>
+                </div>
+
+                <p>Follow us @Instagram </p>
+                <p style="color: #c9c9c9;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, odit sit ipsa officia, atque esse rerum ab repudiandae quis recusandae dolore a? Mollitia in sapiente perspiciatis et minus odio sint.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <h6><i class="fa-solid fa-copyright"></i> HQMultimedia </h6>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+</body>
+<!-- Ck editor -->
+<script src="library/ckeditor/ckeditor/ckeditor.js "></script>
+<script src="library/ckeditor/ckfinder/ckfinder.js "></script>
+<!-- End Ck editor -->
+
+<!-- HQ template -->
+<link rel="stylesheet " href="css/controller-css-element-global.css">
+<link rel="stylesheet " href="css/controller-css-page.css">
+<link rel="stylesheet " href="css/style-global.css">
+<!--  -->
+<link rel="stylesheet " href="css/color.css">
+<link rel="stylesheet " href="css/font.css">
+<script src="js/menu.js "></script>
+<!-- HQ-js-plugin -->
+<!-- 
+<link rel="stylesheet " href="library/hq-multimedia-plugin/hq-js/hq-js-ver-1.9.css ">
+<script src="library/hq-multimedia-plugin/hq-js/hq-js-ver-1.9.js "></script> -->
+<!-- HQ jquery theme project -->
+
+
+
+
+<!-- gọi hàm trong hq-jquery -->
+
+
+
+<!-- js video -->
+<script src="vendor/video-mediaelement-plugins-2.6.7/dist/playlist/mediaelement-and-player.min.js">
+</script>
+<script src="vendor/video-mediaelement-plugins-2.6.7/dist/playlist/playlist.js"></script>
+
+<!-- end js video -->
+
+<!-- pie chart -->
+<script src="vendor/pieChart/jquery.easypiechart.min.js"></script>
+<script src="vendor/pieChart/jquery.appear.min.js"></script>
+
+<!-- Before after js -->
+<link rel="stylesheet" href="vendor/after-before-twenty-twenty/css/twentytwenty.css">
+
+<script src="vendor/after-before-twenty-twenty/js/jquery.event.move.js"></script>
+<script src="vendor/after-before-twenty-twenty/js/jquery.twentytwenty.js"></script>
+
+
+</html>
+
+<!-- jquery loadding -->
+<script>
+    $(window).on('load', function() {
+        $('.load').delay(1000).fadeOut('slow');
+    });
+</script>
+<!-- js menu small -->
+<script>
+    $('.menu-small-icon').click(function() {
+        $('.box-link').toggleClass('show-menu-small');
+        var header = $('.box-link');
+
+        // setTimeout(function() {
+        //     header.toggleClass('fix-height-box-link');
+        // }, 500);
+
+    });
+</script>
+<!-- end js menu small -->
+
+
+<!-- jquery carousel bootstrap -->
+
+<script>
+    $('.carousel-item:first-child').addClass('active');
+    $('.carousel-indicators li:first-child').addClass('active');
+</script>
+<script>
+    show_scroll_content();
+</script>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        merge: true,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        nav: true,
+        // khi di chuột slide sẽ ngưng chuyển
+        autoplayHoverPause: true,
+        // thời gian trượt khi ở chế độ auto ( độ mượt khi chuyển)
+        autoplaySpeed: 1500,
+        // thời gian trượt khi click ( độ mượt khi chuyển) 
+        navSpeed: 1000,
+        // thời gian chuyển 1 slide khi ở chế độ auto
+        autoplayTimeout: 5000,
+
+
+
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            543: {
+                items: 2
+            },
+            767: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            },
+            1065: {
+                items: 1
+            }
+        }
+    })
+</script>

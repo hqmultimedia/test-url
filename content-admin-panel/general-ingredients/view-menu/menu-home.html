@@ -1,0 +1,67 @@
+<div class="father-menu-home row">
+    <div class="child-box displays-lg-6 displays-md-6 displays-sm-12  ">
+        <img width="119px" src="source-data/logo/stylon-logo-new-2.png" alt="">
+    </div>
+    <div class="child-box displays-lg-6 displays-md-6 displays-sm-12 right-end">
+        <div class="box-menu">
+            <i class="fa-light fa-bars button-menu-small"></i>
+            <ul class="box-child-items flex font-basic-include">
+                <li ng-click="show_about()" class="link">Giới thiệu</li>
+                <li ng-click="show_resume()" class="link">Tóm tắt</li>
+                <li ng-click="show_portfolio()" class="link">Portfolio</li>
+                <!-- <li ng-click="show_blog()" class="link">Blog</li> -->
+                <li ng-click="show_contact()" class="link">Liên hệ</li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+
+
+        $('.link').on('click', function(event) {
+            event.preventDefault();
+            $('.father-box-index').addClass('show-overlay');
+
+            // setTimeout(function() {
+            //     $('.father-box-index').addClass('hidden');
+            // }, 1200);
+        });
+        $('.close-element').on('click', function(event) {
+            event.preventDefault();
+            $('.father-box-index').removeClass('show-overlay');
+
+        });
+
+
+        // phần dành riêng cho page portfolio after before
+        $('.show_edit_photo_list').on('click', function(event) {
+            event.preventDefault();
+            $('.father-box-index').addClass('clear-overflow-hidden');
+            var header = $('.box-image');
+            setTimeout(function() {
+                header.removeClass('visibility-hidden');
+            }, 600);
+
+        });
+        // close
+        $('.close-tabs').on('click', function(event) {
+            event.preventDefault();
+            $('.father-box-index').removeClass('clear-overflow-hidden');
+            var header = $('.box-image');
+            setTimeout(function() {
+                header.addClass('visibility-hidden');
+            }, 900);
+
+        });
+
+
+
+
+    });
+</script>

@@ -1,0 +1,110 @@
+<div ng-click="clear_video_list()" class="close-tabs">
+    <i style="font-size: 35px;" class=" cursor close-portfolio-list fa-light fa-xmark"></i>
+</div>
+
+<!-- 01 -->
+<div class="text-center box-title-top">
+    <h6 class="child-item">Showcasing some of my best work </h6>
+    <h2 class="child-item text-color-60-contrast">Video projects</h2>
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4 margin-b-30">
+        <div id="container box-video">
+
+
+
+
+            <div class="media-wrapper">
+                <video id="player1" controls preload="none" data-cast-title="Big Buck Bunny" data-cast-description="Big Buck Bunny is now even more a world standard for video standards" poster="source-data/video/poster-video.jpg">
+                    <source src="source-data/video/Em-cua-ngay-hom-qua.mp4" data-playlist-thumbnail="source-data/video/poster-video.jpg"
+                            title="Em của ngày hôm qua" data-playlist-description="(TD Ballad) là kênh chọn lọc những ca khúc nhạc trẻ mới nhất." type="video/mp4">
+                   
+                </video>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 margin-b-30">
+        <div id="container box-video">
+
+
+
+
+            <div class="media-wrapper">
+                <video id="player1" controls preload="none" data-cast-title="Big Buck Bunny" data-cast-description="Big Buck Bunny is now even more a world standard for video standards" poster="source-data/video/poster-video-2.jpg">
+                    <source src="source-data/video/HOÀNG YẾN CHIBI - Duyệt - EP -Duyệt- - Track 02.mp4" data-playlist-thumbnail="source-data/video/poster-video.jpg"
+                            title="Em của ngày hôm qua" data-playlist-description="(TD Ballad) là kênh chọn lọc những ca khúc nhạc trẻ mới nhất." type="video/mp4">
+                   
+                  
+                </video>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 margin-b-30">
+        <div id="container box-video">
+
+
+
+
+            <div class="media-wrapper">
+                <video id="player1" controls preload="none" data-cast-title="Big Buck Bunny" data-cast-description="Big Buck Bunny is now even more a world standard for video standards" poster="source-data/video/poster-video-2.jpg">
+                    <source src="source-data/video/Say chén rượu, hoen mi cười em khóc trong lòng ai thấu,...Trách Phận Vô Danh - Linh Hương Luz.mp4" data-playlist-thumbnail="source-data/video/poster-video.jpg"
+                            title="Em của ngày hôm qua" data-playlist-description="(TD Ballad) là kênh chọn lọc những ca khúc nhạc trẻ mới nhất." type="video/mp4">
+                   
+                  
+                </video>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<script>
+    $(document).ready(function() {
+
+
+        $('.show_overlay_rl').on('click', function(event) {
+            event.preventDefault();
+            $('.overlay-class-2').addClass('show-overlay-rl');
+
+
+        });
+        $('.close_preview_product').on('click', function(event) {
+            event.preventDefault();
+            $('.overlay-class-2').removeClass('show-overlay-rl');
+
+        });
+
+
+    });
+</script>
+
+<script>
+    var mediaElements = document.querySelectorAll('video, audio');
+
+    for (var i = 0, total = mediaElements.length; i < total; i++) {
+        new MediaElementPlayer(mediaElements[i], {
+            features: ['prevtrack', 'playpause', 'nexttrack', 'current', 'progress', 'duration', 'volume',
+                'playlist', 'shuffle', 'loop', 'fullscreen'
+            ],
+        });
+    }
+</script>

@@ -1,0 +1,261 @@
+/* Slide Carousel */
+
+
+/* 01.BOX CHỨA */
+
+
+/* Option phụ */
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1e1c1c9c;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.show-overlay:hover.carousel-item::after {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+}
+
+.carousel-item.show-overlay .box-content-carousel {
+    color: white;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: 0.4s;
+}
+
+.carousel-item.show-overlay:hover .box-content-carousel {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: 0.4s;
+}
+
+
+/* End option phụ */
+
+.carousel-item .box-content-carousel {
+    position: absolute;
+    top: 50%;
+    left: 68px;
+    transform: translateY(-50%);
+    width: 680px;
+    z-index: 99;
+    /* color: white; */
+}
+
+
+/* 02.TITLE */
+
+.carousel-item .box-content-carousel .item-carousel:nth-child(1) {
+    font-size: 25px;
+}
+
+.carousel-item .box-content-carousel .item-carousel:nth-child(2) {
+    font-size: 50px;
+}
+
+.carousel-item .box-content-carousel .item-carousel:nth-child(3) {
+    font-size: 15px;
+}
+
+
+/* 03.BUTTON */
+
+.carousel-item .box-content-carousel .box-button {
+    display: flex;
+}
+
+.carousel-item .box-content-carousel .box-button .item-button {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    background-color: black;
+    padding: 10px 20px;
+    margin-top: 15px;
+    color: white;
+}
+
+
+/* end setting vị trí của carousel 1 */
+
+
+/* Setting riêng carousel 2 */
+
+
+/* 01.BOX CHỨA */
+
+.carousel-item:nth-child(2) .box-content-carousel {
+    left: inherit !important;
+    right: 15px !important;
+}
+
+
+/* End setting riêng carousel 2 */
+
+
+/* Setting riêng carousel 3 */
+
+.carousel-item:nth-child(3) .box-content-carousel .item-carousel:nth-child(1) {
+    color: white;
+}
+
+.carousel-item:nth-child(3) .box-content-carousel .item-carousel:nth-child(2) {
+    color: aliceblue;
+}
+
+.carousel-item:nth-child(3) .box-content-carousel .item-carousel:nth-child(3) {
+    font-size: 15px;
+    color: white;
+}
+
+
+/* 03.BUTTON */
+
+
+/* .carousel-item:nth-child(3) .box-content-carousel .box-button .item-button {
+    background-color: #c23a63;
+    color: white;
+} */
+
+
+/* End setting riêng carousel 3 */
+
+
+/* Phần button điều hướng */
+
+.setting-next-bootstrap {
+    right: 20px !important;
+}
+
+.setting-prev-bootstrap {
+    left: 20px !important;
+}
+
+.setting-next-bootstrap,
+.setting-prev-bootstrap {
+    top: 0 !important;
+    bottom: 0;
+    width: 39px !important;
+    /* background: black; */
+    opacity: 1 !important;
+    transition: 0.4s !important;
+    visibility: hidden;
+}
+
+
+/* icon */
+
+.setting-icon-next-bootstrap,
+.setting-icon-prev-bootstrap {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: var(--color-60);
+    opacity: .5;
+    transition: 0.4s;
+}
+
+
+/* setting hover icon next prev */
+
+.setting-icon-next-bootstrap:hover,
+.setting-icon-prev-bootstrap:hover {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: var(--color-10);
+    opacity: 1 !important;
+}
+
+
+/* Di chuột để hiển thị icon */
+
+.carousel:hover .setting-next-bootstrap,
+.carousel:hover .setting-prev-bootstrap {
+    visibility: visible;
+    opacity: .5;
+}
+
+
+/* End phần button điều hướng */
+
+
+/* indicator-thumbnail */
+
+.carousel-indicators li {
+    position: relative;
+}
+
+.carousel-indicators.indicator-round li {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+}
+
+img.indicator-thumbnail {
+    width: 102px;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 0 10px 1px #00000040;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.carousel-indicators li:hover img.indicator-thumbnail {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+}
+
+
+/* End indicator-thumbnail  */
+
+
+/* responsive */
+
+@media (min-width:320px) and (max-width:543px) {
+    .carousel-item .box-content-carousel {
+        width: 254px !important;
+        left: 42px;
+    }
+    .carousel-item .box-content-carousel .box-button .item-button {
+        white-space: nowrap;
+    }
+    .carousel-item .box-content-carousel .item-carousel:nth-child(1) {
+        font-size: 20px;
+    }
+    .carousel-item .box-content-carousel .item-carousel:nth-child(2) {
+        font-size: 34px;
+    }
+}
+
+@media (min-width:544px) and (max-width:991px) {
+    .carousel-item .box-content-carousel .item-carousel:nth-child(1) {
+        font-size: 20px;
+    }
+    .carousel-item .box-content-carousel .item-carousel:nth-child(2) {
+        font-size: 34px;
+    }
+}
+
+@media (min-width:544px) and (max-width:991px) {
+    .carousel-item .box-content-carousel {
+        width: 386px !important;
+    }
+}
+
+
+/*  End Slide Carousel */

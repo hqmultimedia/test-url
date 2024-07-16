@@ -1,0 +1,60 @@
+/* 1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* 1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* 2 */
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+/* 3 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/* 5 */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 06 */
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* .font-basic {
+    font-family: "Roboto Slab", serif;
+    font-style: normal !important;
+} */
+
+.font-basic {
+    font-family: 'Quicksand', sans-serif !important;
+    font-style: normal;
+}
+
+.font-2 {
+    font-family: 'Tilt Neon', sans-serif !important;
+    font-style: normal;
+}
+
+.font-3 {
+    font-family: 'Roboto Flex', sans-serif !important;
+    font-style: normal;
+}
+
+.font-04 {
+    font-family: 'Comfortaa', sans-serif !important;
+    font-style: normal;
+}
+
+.font-5 {
+    font-family: 'Overpass', sans-serif !important;
+    font-style: normal;
+}
+
+.font-06 {
+    font-family: 'Roboto', sans-serif !important;
+    font-style: normal;
+}

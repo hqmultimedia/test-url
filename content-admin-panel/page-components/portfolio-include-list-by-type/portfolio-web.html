@@ -1,0 +1,138 @@
+<div ng-click="clear_web_list()" class="close-tabs">
+    <i style="font-size: 35px;" class=" cursor close-portfolio-list fa-light fa-xmark"></i>
+</div>
+
+<!-- 01 -->
+<div class="text-center box-title-top">
+    <h6 class="child-item">Showcasing some of my best work </h6>
+    <h2 class="child-item text-color-60-contrast">web projects</h2>
+
+
+</div>
+
+
+<div class="row margin-b-30">
+    <div class="displays-sm-12">
+        <p class="text-normal">***Vì lý do sử dụng tên miền miễn phí nên hiện tại chỉ có thể upload các dự án frontend lên trước còn các dự án backend tạm thời chưa upload.</p>
+        <div class="margin-b-15">
+            <span class="text-normal ">-Vui lòng trải nghiệm tạm thông qua video bên dưới :</span>
+            <a href=""><span class="text-highlight hover-text-color-60-contrast">Click vào đây</span></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="row ">
+    <!-- 01 -->
+    <div class="displays-sm-12 displays-md-6 displays-lg-4 margin-tb-15 ">
+        <div class="round-large box-preview-project ">
+            <a class="show_overlay_rl" href="" ng-click="show_web_product_01()"><img style="width: 100%;" class="round-large" src=" source-data/preview/web/03.jpg " width="100%" alt=""></a>
+        </div>
+
+        <div class="margin-t-15">
+            <a href="">
+                <h6 class="text-center text-focus uppercase" style="font-size: 15px;">Web project 01</h6>
+            </a>
+        </div>
+    </div>
+    <!-- 02 -->
+    <div class="displays-sm-12 displays-md-6 displays-lg-4 margin-tb-15 ">
+        <div class="round-large box-preview-project ">
+            <a class="show_overlay_rl" href="" ng-click="show_web_product_01()"><img style="width: 100%;" class="round-large" src=" source-data/preview/web/03.jpg " width="100%" alt=""></a>
+        </div>
+
+        <div class="margin-t-15">
+            <a href="">
+                <h6 class="text-center text-focus uppercase" style="font-size: 15px;">Web project 01</h6>
+            </a>
+        </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="displays-sm-12 displays-md-6 displays-lg-4 margin-tb-15 ">
+        <div class="round-large box-preview-project ">
+            <a class="show_overlay_rl" href="" ng-click="show_web_product_01()"><img style="width: 100%;" class="round-large" src=" source-data/preview/web/03.jpg " width="100%" alt=""></a>
+        </div>
+
+        <div class="margin-t-15">
+            <a href="">
+                <h6 class="text-center text-focus uppercase" style="font-size: 15px;">Web project 01</h6>
+            </a>
+        </div>
+    </div>
+
+
+</div>
+<!-- 00 -->
+<div class="row father-box-about-row-there">
+    <div class="displays-sm-12 title-global margin-b-30">
+        <strong class=" title-global-item ">Skill i offer in one project
+            recently</strong>
+        <h2 class=" title-global-item">Backend </h2>
+    </div>
+</div>
+<div class="row" style="padding-bottom: 68px;">
+    <div class="displays-sm-12 displays-md-6 displays-lg-6 margin-b-30">
+        <video class="round-xlarge" id="player1" controls preload="none" data-cast-title="Big Buck Bunny" data-cast-description="Big Buck Bunny is now even more a world standard for video standards" poster="source-data/video/poster-video-2.jpg">
+                    
+            <source src="source-data/video/HOÀNG YẾN CHIBI - Duyệt - EP -Duyệt- - Track 02.mp4"
+                data-playlist-thumbnail="source-data/duyet.jpg"
+                title="OK"
+                data-playlist-description="No description information yet !" type="video/mp4">
+
+
+
+
+
+        </video>
+
+    </div>
+    <div class="displays-sm-12 displays-md-6 displays-lg-6">
+
+        <h4 class="text-highlight">Tính năng</h4>
+        <p class="text-normal margin-t-15">
+            -Tự động phân chia chức năng theo level user,mô hình quản lý nhân sự.
+        </p>
+
+        <p class="text-normal margin-tb-5">+ <span class="text-white">Cộng tác viên :</span> thêm sửa xoá bài viết,user nào thì chỉ dc thấy và thao tác với những bài viết do chính user đó viết</p>
+
+        <p class="text-normal margin-tb-5">+ <span class="text-white">Kiểm duyệt viên :</span> Xem xét,kiểm duyệt các bài viết từ các user cộng tác viên</p>
+        <p class="text-normal margin-tb-5">+ <span class="text-white">Riêng Admin :</span> toàn quyền quyết định và xem xét đánh giá tất cả user,có quyền thao tác và xử lý tất cả dữ liệu khi cần</p>
+        <p class="text-normal margin-tb-5">+ <span class="text-white">Single Page Web Apps :</span> thao tác xử lý dữ liệu không reload lại trang.</p>
+        <p class="text-normal margin-tb-5">+ <span class="text-white">Tính năng phụ :</span> Tìm kiếm nhanh data,xoá hàng loạt,ẩn-hiện hàng loạt... </p>
+
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+
+
+        $('.show_overlay_rl').on('click', function(event) {
+            event.preventDefault();
+            $('.overlay-class-2').addClass('show-overlay-rl');
+
+
+        });
+        $('.close_preview_product').on('click', function(event) {
+            event.preventDefault();
+            $('.overlay-class-2').removeClass('show-overlay-rl');
+
+        });
+
+
+    });
+</script>
+
+<script>
+    var mediaElements = document.querySelectorAll('video, audio');
+
+    for (var i = 0, total = mediaElements.length; i < total; i++) {
+        new MediaElementPlayer(mediaElements[i], {
+            features: ['prevtrack', 'playpause', 'nexttrack', 'current', 'progress', 'duration', 'volume',
+                'playlist', 'shuffle', 'loop', 'fullscreen'
+            ],
+        });
+    }
+</script>

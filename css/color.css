@@ -1,0 +1,60 @@
+:root {
+    /* màu chính */
+    --color--main: #232c33;
+    /* sử dụng https://mycolor.space/ để tìm màu highlight lưu ý phải tương phản tốt với màu chính có thể dùng web adobe để hỗ trợ */
+    --color--main--highlight: #43AE85;
+    /* màu sáng nhất trong dãy Tint Color Variation */
+    --color--main--contrast: #f8f9fa;
+    /* màu sáng nhất trong dãy Tint Color Variation giảm thêm opacity 50% bằng thanh trượt color*/
+    --color--main--contrast--subtract: #f8f9fa80;
+    /* màu đơn sắc trong dãy Monochromatic Color là màu liền kề thứ 2 tính từ màu chính theo chiều từ trái sang phải  */
+    --color--main--monochromatic: #161616;
+    /* màu sáng nhất trong dãy màu Shade Color Variation */
+    /* màu điểm nhấn ko dùng trên nền color-main mà chỉ dùng liền kề hoặc trên nền trắng */
+    /* hoặc màu hợp với màu trắng */
+    /* --color-highlight: #637c90; */
+    --color-highlight: #637c90;
+    /*màu liền kề đầu tiên bên trái tính từ màu chính của dãy Shade Color Variation */
+    --color--text--highlight: #009e66;
+    --color--text--focus: #dadada;
+    /* màu thứ 2 tính từ trái sang phải của dãy Tint Color Variation */
+    --color--text--normal: #9f9f9f;
+    --neutral--color--white: #FFFFFF;
+}
+
+.text-highlight {
+    color: var(--color--text--highlight);
+}
+
+.color-hightlight {
+    background-color: var(--color--text--highlight);
+}
+
+.text-focus {
+    color: var(--color--text--focus);
+}
+
+.text-normal {
+    color: var(--color--text--normal);
+}
+
+.color-main-monochromatic {
+    background-color: var(--color--main--monochromatic);
+    color: var(--color--main--contrast);
+}
+
+.text-color-main-monochromatic {
+    color: var(--color--main--monochromatic);
+}
+
+.text-white {
+    color: var(--neutral--color--white);
+}
+
+.color-white {
+    background-color: var(--neutral--color--white);
+}
+
+.text-unactive {
+    color: #424242;
+}

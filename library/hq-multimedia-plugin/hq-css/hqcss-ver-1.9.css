@@ -1,0 +1,116 @@
+/*Pagination*/
+
+@import url(items/dir-pagination/dir-pagination.css);
+
+/* Carousel */
+
+@import url(items/hq-carousel.css);
+
+/* menu */
+
+@import url(items/hq-menu.css);
+@import url(items/hq-menu-medium.css);
+
+/* content, content text */
+
+@import url(items/hq-content-text.css);
+@import url(items/hq-content.css);
+
+/* Footer */
+
+@import url(items/hq-footer.css);
+
+/*  */
+
+@import url(items/hq-animate.css);
+@import url(items/hq-animate-hover.css);
+@import url(items/hq-table.css);
+@import url(items/hq-alert.css);
+@import url(items/hq-modal.css);
+@import url(items/hq-background-img.css);
+@import url(items/hq-border.css);
+@import url(items/hq-box-ratio.css);
+@import url(items/hq-oject-fit.css);
+@import url(items/hq-margin.css);
+@import url(items/hq-padding.css);
+@import url(items/hq-color.css);
+@import url(items/hq-round.css);
+@import url(items/hq-single.css);
+@import url(items/hq-flex.css);
+@import url(items/hq-display.css);
+@import url(items/hq-slider.css);
+@import url(items/hq-font.css);
+@import url(items/responsive.css);
+@import url(items/hq-pin.css);
+@import url(items/hq-tooltip.css);
+
+/* 2-2024 */
+
+@import url(items/hq-button-new.css);
+@import url(items/hq-toast.css);
+
+/* @import url(settingProject.css); */
+
+
+/*  */
+
+@import url(items/sidebar.css);
+
+/* 8-4-2024 */
+
+@import url(items/hq-col.css);
+
+/*  */
+
+body {
+    font-size: 15px !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none !important;
+    margin-bottom: 0rem !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3a3939bd;
+    border-radius: 5px;
+    height: 5px !important;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #101010;
+}
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #13111134;
+    border-radius: 5px;
+    height: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:window-active {
+    background-color: #007bff !important;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #13111134;
+}

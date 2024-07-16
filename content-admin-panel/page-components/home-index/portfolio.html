@@ -1,0 +1,100 @@
+<div ng-click="clear_portfolio()" class="close-tabs">
+    <i style="font-size: 35px;" class=" cursor close-element fa-light fa-xmark"></i>
+</div>
+
+<!-- 01 -->
+<div class="text-center box-title-top">
+    <h6 class="child-item">List of projects by type </h6>
+    <h2 class="child-item text-color-60-contrast">Portfolio </h2>
+    <div class="box-child-items"></div>
+
+</div>
+
+
+<div class="row father-box-portfolio-row-one">
+    <!-- 01 -->
+    <div class="child-box padding-tb-30 displays-sm-12 displays-md-6 displays-lg-4 ">
+        <a href="" class="show_list_product show_edit_photo_list">
+            <img class="round-large child-item " src="source-data/portfolio/chinhanh.jpg" width="100%" alt="">
+        </a>
+        <div>
+            <a class="show_list_product show_edit_photo_list " href="">
+                <h5 class=" text-white margin-t-15 margin-b-5">Chỉnh sửa ảnh</h5>
+            </a>
+        </div>
+        <p class="text-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti similique dolore sed aspernatur nihil natus possimus ut asperiores sit, iste, amet tempora! Officia ratione tempora corporis quasi, incidunt autem ipsam.</p>
+    </div>
+
+
+    <!-- 02 -->
+    <div class="child-box padding-tb-30 displays-sm-12 displays-md-6 displays-lg-4 ">
+        <a href="" class="show_list_product" ng-click="show_poster_list()">
+            <img class="round-large child-item " src="source-data/portfolio/poster.jpg" width="100%" alt="">
+        </a>
+        <div>
+            <a class="show_list_product" href="" ng-click="show_poster_list()">
+                <h5 class=" text-white margin-t-15 margin-b-5">Thiết kế poster</h5>
+            </a>
+        </div>
+        <p class="text-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti similique dolore sed aspernatur nihil natus possimus ut asperiores sit, iste, amet tempora! Officia ratione tempora corporis quasi, incidunt autem ipsam.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="child-box padding-tb-30 displays-sm-12 displays-md-6 displays-lg-4 ">
+        <a href="" class="show_list_product" ng-click="show_web_list()">
+            <img class="round-large child-item " src="source-data/portfolio/web.jpg" width="100%" alt="">
+        </a>
+        <div>
+            <a class="show_list_product" href="" ng-click="show_web_list()">
+                <h5 class=" text-white margin-t-15 margin-b-5">Thiết kế web</h5>
+            </a>
+        </div>
+        <p class="text-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti similique dolore sed aspernatur nihil natus possimus ut asperiores sit, iste, amet tempora! Officia ratione tempora corporis quasi, incidunt autem ipsam.</p>
+    </div>
+    <!-- 04 -->
+    <div class="child-box padding-tb-30 displays-sm-12 displays-md-6 displays-lg-4 ">
+        <a href="" class="show_list_product" ng-click="show_video_list()">
+            <img class="round-large child-item " src="source-data/portfolio/video.jpg" width="100%" alt="">
+        </a>
+        <div>
+            <a class="show_list_product" href="" ng-click="show_video_list()">
+                <h5 class=" text-white margin-t-15 margin-b-5">Dựng video-phim</h5>
+            </a>
+        </div>
+        <p class="text-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti similique dolore sed aspernatur nihil natus possimus ut asperiores sit, iste, amet tempora! Officia ratione tempora corporis quasi, incidunt autem ipsam.</p>
+    </div>
+    <!-- 5 -->
+    <div class="child-box padding-tb-30 displays-sm-12 displays-md-6 displays-lg-4 ">
+        <a href="" class="show_list_product" ng-click="show_tapchi_list()">
+            <img class="round-large child-item " src="source-data/portfolio/tapchi.jpg" width="100%" alt="">
+        </a>
+        <div>
+            <a class="show_list_product" href="" ng-click="show_tapchi_list()">
+                <h5 class=" text-white margin-t-15 margin-b-5">Tạp chí</h5>
+            </a>
+        </div>
+        <p class="text-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti similique dolore sed aspernatur nihil natus possimus ut asperiores sit, iste, amet tempora! Officia ratione tempora corporis quasi, incidunt autem ipsam.</p>
+    </div>
+
+</div>
+
+
+<script>
+    $(document).ready(function() {
+
+
+        $('.show_list_product').on('click', function(event) {
+            event.preventDefault();
+            $('.father-box-index').addClass('show-overlay-lr');
+
+
+        });
+        $('.close-portfolio-list').on('click', function(event) {
+            event.preventDefault();
+            $('.father-box-index').removeClass('show-overlay-lr');
+
+        });
+
+
+    });
+</script>

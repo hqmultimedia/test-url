@@ -1,0 +1,46 @@
+<div ng-click="clear_edit_photo_list()" class="close-tabs">
+    <i style="font-size: 35px;" class=" cursor close-portfolio-list fa-light fa-xmark"></i>
+</div>
+
+<!-- 01 -->
+<div class="text-center box-title-top">
+    <h6 class="child-item">Showcasing some of my best work </h6>
+    <h2 class="child-item text-color-60-contrast">Photo projects</h2>
+
+
+</div>
+
+
+
+<div class="box-image">
+    <div class="item-image">
+
+        <img src="source-data/img/01.jpg" alt="">
+        <img src="source-data/img/02.jpg" alt="">
+
+    </div>
+
+
+</div>
+
+
+
+
+<script>
+    var mediaElements = document.querySelectorAll('video, audio');
+
+    for (var i = 0, total = mediaElements.length; i < total; i++) {
+        new MediaElementPlayer(mediaElements[i], {
+            features: ['prevtrack', 'playpause', 'nexttrack', 'current', 'progress', 'duration', 'volume',
+                'playlist', 'shuffle', 'loop', 'fullscreen'
+            ],
+        });
+    }
+</script>
+<script>
+    $(function() {
+        $(".item-image,.item-image-2").twentytwenty({
+            default_offset_pct: 0.5
+        });
+    })
+</script>

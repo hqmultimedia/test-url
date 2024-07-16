@@ -1,0 +1,11 @@
+/* css include */
+
+@import url(page/layout-center.css);
+@import url(page/layout-mansory.css);
+@import url(page/layoy-mansory-image.css);
+
+/* @import url(page/layout-mansory-cv.css); */
+
+:root {
+    --height--menu: 79px;
+}
